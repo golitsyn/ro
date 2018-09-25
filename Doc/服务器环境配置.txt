@@ -1,0 +1,3 @@
+一、服务器环境配置
+
+按照当前目录下 env_install 中 ReadMe.txt 进行配置

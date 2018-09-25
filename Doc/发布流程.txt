@@ -1,0 +1,15 @@
+1> 编译:
+    进入server目录 -> make tarball -j8 -> 编译
+2> 复制:
+    1. 进入server/bin目录 -> 查询ro-xxxxxx.tbz和ro-xxxxxx.symbol.tbz文件
+    2. 复制文件到t11.sg.xindong.com:gc下
+    3. 登陆t11.sg.xindong.com:gc
+    4. 复制文件到7x017.xd.com:root下
+    5. 在t11.sg.xindong.com:gc状态下，使用命令7x登陆7x017.xd.com并复制文件到7x017下
+    6. 在7x017下，使用sssh ro_s0@7x035.xd.com登陆7x035
+    7. 复制文件到7x035根目录下
+3> 解压:
+    1. 创建server_version文件夹并复制
+    2. 使用tar jcf ro-xxxxxx.tbz解压文件
+    3. 检查config.xml配置是否正确
+    4. 使用./restart命令启动服务器

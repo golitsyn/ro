@@ -1,0 +1,21 @@
+
+以下操作均需在root下执行
+
+1.安装
+  通过命令yum -y install oprofile.x86_64 安装oprofile。
+
+2.初始化
+  opcontrol --no-vmlinux : 只是oprofile启动检测后，不记录内核模块、内核代码的统计信息
+  opcontrol --init : 加载oprofile模块
+
+3.检测
+  opcontrol --start : 启动检测
+  opcontrol --dump : 将检测结果写入文件
+  opcontrol --reset : 清空之前的检测结果
+  opcontrol --shutdown : 关闭oprofile进程
+
+4.结果
+  opreport : 以镜像的角度现实检测结果
+  opreport -l : 以函数的角度显示检测结果
+  opreprot -l test : 以函数的角度，针对test进程显示检测结果
+
